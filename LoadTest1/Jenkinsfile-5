@@ -1,0 +1,20 @@
+pipeline {
+  agent any
+
+   environment {
+        K6_API_TOKEN=credentials("68d431e38def81c5a9cd7e32f5dc8257de496980141c861b204587b8f3046d23")
+        K6_CLOUD_PROJECT_ID=credentials("K6_ABC2005")
+    }
+  stages {
+    stage('verify k6') {
+      steps {
+        sh 'k6 version'
+      }
+    }
+    stage('run k6 test') {
+      steps {
+        sh 'k6 cloud LoadTest1/script.js'
+      }
+    }
+  }
+}
