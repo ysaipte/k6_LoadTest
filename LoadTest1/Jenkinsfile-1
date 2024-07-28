@@ -1,6 +1,7 @@
 pipeline {
 agent{
-    label 'K6-Slave1','K6-Slave2'
+    label 'K6-Slave1'
+    lable 'K6-Slave2'
  }
   stages {
     stage('verify k6') {
