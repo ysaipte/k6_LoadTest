@@ -8,7 +8,7 @@ import { options } from '../Commons/common.js';
 
 export { options }
 
-export default function SampleTest()
+export function SampleTest()
 {  
     
     Amazon();
