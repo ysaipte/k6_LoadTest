@@ -8,7 +8,7 @@ agent any
     }
     stage('run k6 test') {
       steps {
-        sh 'k6 run LoadTest1/script.js'
+        sh 'k6 run LoadTest1/PerformanceTest.js'
       }
     }
   }
