@@ -1,7 +1,5 @@
 pipeline {
-  agent{
-    label 'K6-Node2'
- }
+  agent any
   stages {
     stage('verify k6') {
       steps {
