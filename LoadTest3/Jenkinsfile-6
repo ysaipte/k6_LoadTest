@@ -1,12 +1,14 @@
 pipeline {
-   agent {label 'K6 Node1 && K6 Node2'}
+   agent none
   stages {
     stage('verify k6') {
+	  agent {label 'K6 Node1 && K6 Node2'}
       steps {
         sh 'k6 version'
       }
     }
     stage('run k6 test') {
+	  agent {label 'K6 Node1 && K6 Node2'}
       steps {
         sh 'k6 run LoadTest3/Execution/Execution.js'
       }
