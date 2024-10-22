@@ -10,16 +10,18 @@ export const options = {
         //   // { duration: '10s', target: 50 },
         //   // { duration: '6m', target: 50 },
   
-          { duration: '05s', target: 05 },
-          { duration: '2m', target: 05 },
+          { duration: '10s', target: 10 },
+          { duration: '2m', target: 10 },
   
-          { duration: '05s', target: 10 },
-          { duration: '3m', target: 10 },
+          { duration: '15s', target: 15 },
+          { duration: '1m', target: 15 },
   
         ],
 
         gracefulRampDown: '10s',
         exec: 'SampleTest',
     },
+
+  
 },
 }
