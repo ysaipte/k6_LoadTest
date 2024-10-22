@@ -19,7 +19,7 @@ export const options = {
         ],
 
         gracefulRampDown: '10s',
-        exec: 'SampleTest,'
+        exec: 'SampleTest',
     },
 },
 }
