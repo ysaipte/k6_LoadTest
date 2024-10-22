@@ -1,6 +1,5 @@
 pipeline {
-   //agent {label 'K6 Node1' && 'K6 Node2' }//
-  agent all
+   {label 'K6 Node1 && K6 Node2'}
   stages {
     stage('verify k6') {
       steps {
